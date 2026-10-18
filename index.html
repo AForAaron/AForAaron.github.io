@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guorui Zhang</title>
+  <meta name="description" content="Guorui Zhang — deep learning, computer vision and trustworthy multimodal AI. Seeking PhD opportunities.">
+  <meta property="og:title" content="Guorui Zhang">
+  <meta property="og:description" content="Deep learning, computer vision and trustworthy multimodal AI. Seeking PhD opportunities.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%238b5cf6'/%3E%3Cstop offset='1' stop-color='%2322d3ee'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' text-anchor='middle' fill='white'%3EGZ%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <div class="bg-aurora" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <canvas id="net" aria-hidden="true"></canvas>
+      <div class="wrap hero-inner">
+        <div class="hero-text">
+          <span class="pill reveal"><span class="dot"></span>Open to PhD positions · flexible start</span>
+          <h1 class="reveal">Guorui <em>Zhang</em></h1>
+          <p class="typer reveal">I work on <span id="typed" class="grad-text">Deep Learning</span><span class="caret" aria-hidden="true"></span></p>
+          <p class="lede reveal">Master of Information Technology (AI), <strong>UNSW Sydney</strong>. I build vision models that hold up under scarce, imbalanced data — and I want to make multimodal AI systems <strong>trustworthy</strong>.</p>
+          <div class="cta reveal">
+            <a class="btn primary" href="#cv">View CV <span aria-hidden="true">→</span></a>
+            <a class="btn" href="mailto:guoruizhang32@gmail.com">Email me</a>
+            <a class="btn ghost" href="https://github.com/AForAaron" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+        <div class="avatar reveal" aria-label="Guorui Zhang">
+          <div class="avatar-ring"></div>
+          <div class="avatar-core"><span>GZ</span></div>
+        </div>
+      </div>
+      <a href="#numbers" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- NUMBERS -->
+    <section id="numbers" class="wrap stats">
+      <div class="stat reveal"><b data-count="76.3" data-dec="1">0</b><span>WAM at UNSW<br>(Distinction)</span></div>
+      <div class="stat reveal"><b data-count="0.972" data-dec="3">0</b><span>Accuracy,<br>fashion classification</span></div>
+      <div class="stat reveal"><b data-count="0.651" data-dec="3">0</b><span>mIoU, dead-tree<br>segmentation</span></div>
+      <div class="stat reveal"><b data-count="6" data-dec="0">0</b><span>Input channels<br>fused (RGB + NIR)</span></div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section id="research" class="wrap">
+      <header class="sec-head reveal">
+        <span class="kicker">01 — Research</span>
+        <h2>What I want to <em>figure out</em></h2>
+      </header>
+      <div class="bento">
+        <article class="card span-2 spot reveal">
+          <span class="tag">Primary interest</span>
+          <h3>Source bias in multimodal recommendation</h3>
+          <p>Ranking systems have been shown to prefer AI-generated text and images over semantically equivalent human-created content. I want to know whether this happens in <strong>multimodal recommenders</strong> when only <em>one</em> modality of an item is machine-generated, <strong>where</strong> the preference lives, and whether it can be removed <strong>post hoc</strong> — without retraining large vision-language backbones.</p>
+          <div class="pipeline" aria-label="Where could the bias live?">
+            <span>Visual encoder</span><i></i><span>Fusion layer</span><i></i><span>Interaction history</span><i></i><span class="hl">Ranking</span>
+          </div>
+        </article>
+        <article class="card spot reveal">
+          <span class="tag">Interest</span>
+          <h3>Robust vision under data scarcity</h3>
+          <p>Rare foreground classes, multi-spectral inputs, and evaluation protocols that reflect real deployment instead of headline accuracy.</p>
+        </article>
+        <article class="card spot reveal">
+          <span class="tag">Foundation</span>
+          <h3>Deep learning &amp; computer vision</h3>
+          <p>Segmentation, fine-grained classification, controlled model comparisons and per-class error analysis.</p>
+        </article>
+        <article class="card span-2 spot reveal quote">
+          <p>“I care about <em>why</em> a model improves, not only <em>how much</em>.”</p>
+          <span class="muted">Open to related directions within a supervisor's group.</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="wrap">
+      <header class="sec-head reveal">
+        <span class="kicker">02 — Projects</span>
+        <h2>Selected <em>work</em></h2>
+      </header>
+
+      <article class="project spot reveal">
+        <div class="p-top">
+          <div>
+            <span class="p-meta">UNSW · 2025 · Project lead</span>
+            <h3>Segmenting standing dead trees in aerial RGB+NIR imagery</h3>
+          </div>
+          <span class="p-num">01</span>
+        </div>
+        <p>A controlled comparison of FCN-ResNet50, SegFormer and DeepLabV3+ on a 6-channel input. Treated foreground scarcity — not model capacity — as the bottleneck, with architecture-specific hybrid losses (Focal + Dice; weighted CE + Tversky).</p>
+        <div class="chips"><span>PyTorch</span><span>SegFormer</span><span>DeepLabV3+</span><span>Class imbalance</span><span>Multi-spectral</span></div>
+        <div class="metrics">
+          <div><b>0.651</b><span>mIoU · SegFormer</span></div>
+          <div><b>0.723</b><span>Recall · SegFormer</span></div>
+          <div><b>0.594</b><span>F2 · DeepLabV3+</span></div>
+        </div>
+        <details>
+          <summary>Full results</summary>
+          <div class="table-scroll"><table>
+            <thead><tr><th>Model</th><th>mIoU</th><th>Recall</th><th>F2</th></tr></thead>
+            <tbody>
+              <tr><td>FCN-ResNet50 (baseline)</td><td>0.625</td><td>0.532</td><td>0.496</td></tr>
+              <tr><td>SegFormer (MiT-B2)</td><td class="best">0.651</td><td class="best">0.723</td><td>–</td></tr>
+              <tr><td>DeepLabV3+</td><td>–</td><td>–</td><td class="best">0.594</td></tr>
+            </tbody>
+          </table></div>
+        </details>
+      </article>
+
+      <article class="project spot reveal">
+        <div class="p-top">
+          <div>
+            <span class="p-meta">UNSW · 2024 · Project lead</span>
+            <h3>Attention-guided EfficientNetV2 + DenseNet ensemble for fashion classification</h3>
+          </div>
+          <span class="p-num">02</span>
+        </div>
+        <p>Three classifiers compared on the AiDLab fAshIon dataset. Per-class analysis showed most of the gain came from visually similar categories the baseline had confused.</p>
+        <div class="chips"><span>EfficientNetV2</span><span>DenseNet</span><span>Attention fusion</span><span>Fine-grained</span></div>
+        <div class="bar-compare" aria-label="Accuracy: baseline 0.917, ensemble 0.972">
+          <div class="bar"><span>ResNet-50 baseline</span><div class="track"><i style="--w:91.7%"></i></div><b>0.917</b></div>
+          <div class="bar win"><span>Ensemble + attention</span><div class="track"><i style="--w:97.2%"></i></div><b>0.972</b></div>
+        </div>
+        <div class="metrics">
+          <div><b>0.995</b><span>mAP (from 0.949)</span></div>
+          <div><b>0.972</b><span>F1</span></div>
+        </div>
+      </article>
+
+      <article class="project spot reveal">
+        <div class="p-top">
+          <div>
+            <span class="p-meta">UNSW GSOE9011 · 2025 · Research proposal</span>
+            <h3>Real-time forest fire detection for NSW bushland</h3>
+          </div>
+          <span class="p-num">03</span>
+        </div>
+        <p>A proposed transformer-based detector on open satellite data, tailored to NSW's oil-rich eucalyptus forests and complex terrain, to be benchmarked against CNN-based methods on historical NSW fire data. <span class="muted">Proposal only — no experiments run yet.</span></p>
+        <div class="chips"><span>Transformers</span><span>Satellite imagery</span><span>Spatio-temporal</span></div>
+      </article>
+    </section>
+
+    <!-- CV / TIMELINE -->
+    <section id="cv" class="wrap">
+      <header class="sec-head reveal">
+        <span class="kicker">03 — CV</span>
+        <h2>Education &amp; <em>experience</em></h2>
+      </header>
+      <ol class="timeline">
+        <li class="reveal">
+          <span class="when">03/2026 — now</span>
+          <h3>IT Engineer</h3>
+          <span class="where">Xinyuan Zhida Software Technology (Shanxi) Co., Ltd.</span>
+          <p>Cloud servers, storage and network operations; deployment, alert handling and incident troubleshooting; cost analysis and technical reporting.</p>
+        </li>
+        <li class="reveal edu">
+          <span class="when">02/2024 — 12/2025</span>
+          <h3>Master of Information Technology (AI)</h3>
+          <span class="where">UNSW Sydney · School of Computer Science and Engineering</span>
+          <p>WAM 76.3 (Distinction). Coursework in computer vision, deep learning, machine learning and data mining.</p>
+        </li>
+        <li class="reveal">
+          <span class="when">12/2022 — 02/2023</span>
+          <h3>Web Development &amp; Management Intern</h3>
+          <span class="where">Shanxi Longshang Agricultural Technology Co., Ltd.</span>
+        </li>
+        <li class="reveal">
+          <span class="when">07/2022 — 08/2022</span>
+          <h3>Information Systems Intern</h3>
+          <span class="where">Shanxi Manxinda Trading Co., Ltd.</span>
+        </li>
+        <li class="reveal edu">
+          <span class="when">09/2019 — 06/2023</span>
+          <h3>B.Eng. in Software Engineering</h3>
+          <span class="where">Changchun University of Science and Technology</span>
+          <p>Weighted average 81/100 · Third-Class Academic Excellence Scholarship.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- SKILLS MARQUEE -->
+    <section class="marquee reveal" aria-label="Skills">
+      <div class="track-m">
+        <span>Python</span><span>PyTorch</span><span>TensorFlow</span><span>Keras</span><span>Hugging Face Transformers</span><span>torchvision</span><span>OpenCV</span><span>C++</span><span>JavaScript</span><span>Cloud ops</span>
+        <span aria-hidden="true">Python</span><span aria-hidden="true">PyTorch</span><span aria-hidden="true">TensorFlow</span><span aria-hidden="true">Keras</span><span aria-hidden="true">Hugging Face Transformers</span><span aria-hidden="true">torchvision</span><span aria-hidden="true">OpenCV</span><span aria-hidden="true">C++</span><span aria-hidden="true">JavaScript</span><span aria-hidden="true">Cloud ops</span>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="wrap">
+      <div class="contact reveal">
+        <span class="kicker">04 — Contact</span>
+        <h2>Looking for a <em>PhD student</em>?</h2>
+        <p>I'm happy to talk about projects in your group. Chinese (native) · English (fluent).</p>
+        <a class="btn primary big" href="mailto:guoruizhang32@gmail.com">guoruizhang32@gmail.com</a>
+      </div>
+    </section>
+
+    <footer class="wrap foot">
+      <span>© <span id="yr">2026</span> Guorui Zhang</span>
+      <span class="muted">Shanxi, China</span>
+    </footer>
+  </main>
+
+  <!-- DOCK -->
+  <nav class="dock" aria-label="Sections">
+    <a href="#home" title="Home"><svg viewBox="0 0 24 24"><path d="M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg><span>Home</span></a>
+    <a href="#research" title="Research"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><span>Research</span></a>
+    <a href="#projects" title="Projects"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg><span>Projects</span></a>
+    <a href="#cv" title="CV"><svg viewBox="0 0 24 24"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8z"/><path d="M14 3v5h5M8 13h8M8 17h6"/></svg><span>CV</span></a>
+    <i class="sep"></i>
+    <a href="mailto:guoruizhang32@gmail.com" title="Email"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span>Email</span></a>
+    <a href="https://github.com/AForAaron" target="_blank" rel="noopener" title="GitHub"><svg viewBox="0 0 24 24"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12 12 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg><span>GitHub</span></a>
+    <button id="theme" type="button" title="Toggle theme"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><span>Theme</span></button>
+  </nav>
+
+  <script src="main.js"></script>
+</body>
+</html>
