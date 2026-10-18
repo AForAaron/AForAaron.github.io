@@ -24,3 +24,6 @@ package-lock.json
 
 # Local agent state
 .claude/
+
+# Hallmark project memory (local only)
+.hallmark/
